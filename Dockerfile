@@ -10,9 +10,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 COPY . .
 
-# Ensure we have the latest setup tools
 RUN pip install --no-cache-dir --upgrade pip setuptools wheel
-RUN pip install --no-cache-dir flask google-generativeai lcapy numpy matplotlib Pillow
+RUN pip install --no-cache-dir -r requirements.txt
 
-# We REMOVE the ENV PORT line entirely. Railway handles this.
 CMD ["python", "app.py"]

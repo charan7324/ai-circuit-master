@@ -1,7 +1,6 @@
-flask
-flask-cors
+customtkinter
+pillow
 google-generativeai
 lcapy
 numpy
 matplotlib
-Pillow

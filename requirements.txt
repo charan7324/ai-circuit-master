@@ -1,0 +1,6 @@
+flask
+google-generativeai
+lcapy
+numpy
+matplotlib
+Pillow

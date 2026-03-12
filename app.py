@@ -76,6 +76,8 @@ def index():
     return render_template('index.html', image_url=image_url, reasoning=reasoning)
 
 if __name__ == '__main__':
+    # Railway provides the PORT, but we force it to 8080 as a fallback
     port = int(os.environ.get("PORT", 8080))
+    # Using 0.0.0.0 is MANDATORY for cloud access
+    app.run(host='0.0.0.0', port=port, debug=False)
 
-    app.run(host='0.0.0.0', port=port)

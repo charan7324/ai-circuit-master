@@ -1,9 +1,7 @@
 # AI Circuit Master ⚡
 
-An intelligent, physically-aware Electronic Design Automation (EDA) tool. This application uses the Gemini 1.5 Flash model to convert natural language descriptions or hand-drawn images into professional, LaTeX-rendered circuit schematics.
+An intelligent, physically-aware Electronic Design Automation (EDA) tool. This application uses the Gemini 2.5 Flash model to convert natural language descriptions or hand-drawn images into professional, LaTeX-rendered circuit schematics.
 
-## 🚀 Live Demo
-[PASTE YOUR RAILWAY URL HERE]
 
 ## 🌟 Key Features
 - **Physically Intelligent Rendering:** The AI analyzes current flow. If a circuit is "broken" (e.g., an open switch in series), output components like LEDs are automatically rendered in a "Dark/Off" state.
@@ -12,11 +10,11 @@ An intelligent, physically-aware Electronic Design Automation (EDA) tool. This a
 - **Auto-Topology Correction:** Intelligently handles complex series and parallel layouts based on engineering best practices.
 
 ## 🛠️ Tech Stack
-- **AI:** Google Gemini 1.5 Flash (Multimodal)
-- **Backend:** Python / Flask
+- **AI:** Google Gemini 2.5 Flash (Multimodal)
+- **Backend:** Python
 - **Engineering Library:** Lcapy (Linear Circuit Analysis)
 - **Rendering:** LaTeX (TeX Live) / dvipng
-- **Deployment:** Docker / Railway
+- **Deployment:** customtkinter (ux)
 
 ## 📦 Local Installation
 1. Clone the repo: `git clone https://github.com/YOUR_USERNAME/ai-circuit-master.git`
